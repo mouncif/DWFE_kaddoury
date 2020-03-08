@@ -1,0 +1,154 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nom": "Bannani",
+      "prenom": "Yassine",
+      "statut": "Employee",
+      "photo": "",
+      "tel": "0670712891",
+      "email": "Bannani@gmail.com",
+      "adresse": "Casa Port 1",
+      "ville": "Casa"
+    },
+    {
+      "id": 2,
+      "nom": "Mallouli",
+      "prenom": "Namiri",
+      "statut": "Employee",
+      "photo": "",
+      "tel": "0610215894",
+      "email": "namiri2017@gmail.com",
+      "adresse": "Fés Block 1 Hay Kobra",
+      "ville": "Fés"
+    },
+    {
+      "id": 3,
+      "nom": "Kouhali",
+      "prenom": "Yassmine",
+      "statut": "Chef",
+      "photo": "",
+      "tel": "0670712897",
+      "email": "yassmine@gmail.com",
+      "adresse": "Hay houda BC1 BM",
+      "ville": "Tanger"
+    }
+  ],
+  "fournisseurs": [
+    {
+      "id": 1,
+      "nom": "SIMAsos",
+      "nomCourt": "sos",
+      "ville": "Rabat",
+      "adresse": "Rabat",
+      "telFix": "05258597",
+      "telMobile": "06388666907",
+      "telFax": "032659789",
+      "email": "ss@gmail.com"
+    },
+    {
+      "id": 2,
+      "nom": "Location",
+      "nomCourt": "LoCIn",
+      "ville": "Casa",
+      "adresse": "Casa",
+      "telFix": "052489765",
+      "telMobile": "0780984578",
+      "telFax": "024879536",
+      "email": "loCin@gmail.com"
+    },
+    {
+      "id": 3,
+      "nom": "Telecom",
+      "nomCourt": "TelOc",
+      "ville": "Fés",
+      "adresse": "Narjis Block 1 Fés",
+      "telFix": "05268975",
+      "telMobile": "02879568",
+      "telFax": "02354896",
+      "email": "TelOc@gmail.com"
+    }
+  ],
+  "produits": [
+    {
+      "id": 1,
+      "nom": "Casque",
+      "nomCourt": "CSA",
+      "prixBase": "100",
+      "prixVente": "5000",
+      "maxRemise": "10",
+      "unite": "30",
+      "image": "",
+      "qteInitial": "500",
+      "qteActuel": "25"
+    },
+    {
+      "id": 2,
+      "nom": "Ecouteurs",
+      "nomCourt": "Ects",
+      "prixBase": "100",
+      "prixVente": "155",
+      "maxRemise": "20",
+      "unite": "125",
+      "image": "",
+      "qteInitial": "125",
+      "qteActuel": "156"
+    },
+    {
+      "id": 3,
+      "nom": "Tablet",
+      "nomCourt": "TABs",
+      "prixBase": "1540",
+      "prixVente": "150",
+      "maxRemise": "125",
+      "unite": "12",
+      "image": "",
+      "qteInitial": "15",
+      "qteActuel": "125"
+    },
+    {
+      "id": 4,
+      "nom": "Télephone",
+      "nomCourt": "StartTel",
+      "prixBase": "100",
+      "prixVente": "100",
+      "maxRemise": "10",
+      "unite": "12",
+      "image": "",
+      "qteInitial": "10",
+      "qteActuel": "12"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nom": "Kaddoury",
+      "prenom": "kamal",
+      "status": "Admin",
+      "password": "123456789",
+      "email": "kamal124@gmail.com",
+      "dateCreation": "2020-03-08T12:36:33.166Z",
+      "tel": "0638869907"
+    },
+    {
+      "id": 2,
+      "nom": "autho",
+      "prenom": "yassine",
+      "status": "Editor",
+      "password": "123456789",
+      "email": "yassine@gmail.com",
+      "dateCreation": "2020-03-08T12:37:30.803Z",
+      "tel": "06859715"
+    },
+    {
+      "id": 3,
+      "nom": "TestUser",
+      "prenom": "TestUser",
+      "status": "User",
+      "password": "123",
+      "email": "TestUser@gmail.com",
+      "dateCreation": "2020-03-08T12:39:30.103Z",
+      "tel": "0638869907"
+    }
+  ]
+}

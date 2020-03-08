@@ -1,0 +1,55 @@
+<!-- Breadcrumbs-->
+
+<div class="row">
+  <div class="col-4">
+    <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Fournisseurs</a>
+  </li>
+  <li class="breadcrumb-item active">liste des fournisseurs</li>
+</ol>
+</div>
+</div>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-archive" aria-hidden="true"></i>Fournisseurs
+  
+  </div>
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead class="table-active">
+      
+ 
+      <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Nom Court</th>
+        <th>Ville</th>
+        <th>Adresse</th>
+        <th>Fix</th>
+        <th>Mobile</th>
+        <th>Fax</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tr *ngFor="let fournisseur of fournisseurs">
+        <td>{{ fournisseur.id }}</td>
+        <td>{{ fournisseur.nom }}</td>
+        <td>{{ fournisseur.nomCourt }}</td>
+        <td>{{ fournisseur.ville }}</td>
+        <td>{{ fournisseur.adresse }}</td>
+        <td>{{ fournisseur.telFix }}</td>
+        <td>{{ fournisseur.telMobile }}</td>
+        <td>{{ fournisseur.telFax }}</td>
+        <td>{{ fournisseur.email }}</td>
+        <td>
+          <button (click)="edit(fournisseur)" style="background: white; border: white;"   type="button" class="edit" title="Edit"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></button>
+          <button (click)="delete(fournisseur)" style="background: white; border: white;" type="button" class="delete" title="Delete"><i style="color: #E34724;" class="material-icons">&#xE872;</i></button>
+        </td>
+      </tr>
+    </table>
+    <button type="button" class="btn btn-info add-new float-right" routerLink="/fournisseurs/add"><i class="fa fa-plus"></i>AddNew</button>
+  </div>
+</div>

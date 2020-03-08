@@ -1,0 +1,87 @@
+<!-- Breadcrumbs-->
+
+<div class="row">
+  <div class="col-4">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Produits</a>
+  </li>
+  <li class="breadcrumb-item active">Ajouter un Produit</li>
+</ol>
+  </div>
+</div>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-product-hunt" aria-hidden="true"></i>Produit
+  </div>
+
+  <div class="card-body">
+    <form [formGroup]="produitService.form" (submit)="save()">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Nom</label>
+                <input type="text" formControlName="nom" name="nom" class="form-control" placeholder="Nom">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Nom court</label>
+                <input type="text" formControlName="nomCourt" name="nomCourt" class="form-control" placeholder="Nom">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Prix de Base</label>
+                <input type="text" formControlName="prixBase" name="prixBase" class="form-control" placeholder="prixBase">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Prix de Vente</label>
+                <input type="text" formControlName="prixVente" name="prixVente" class="form-control" placeholder="prixVente">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Max Remise</label>
+                <input type="text" formControlName="maxRemise" name="maxRemise" class="form-control" placeholder="maxRemise">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Unite</label>
+                <input type="text" formControlName="unite" name="unite" class="form-control" placeholder="unite">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Qte Initial</label>
+                <input type="text" formControlName="qteInitial" name="qteInitial" class="form-control" placeholder="qteInitial">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Qte Actuel</label>
+                <input type="text" formControlName="qteActuel" name="qteActuel" class="form-control" placeholder="qteActuel">
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        
+      </div>
+      <button type="submit" class="btn btn-info">Submit</button>
+        <button type="reset" class="btn btn-info">Clear</button>
+    </form>
+  </div>
+</div>

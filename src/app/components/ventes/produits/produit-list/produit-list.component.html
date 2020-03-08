@@ -1,0 +1,56 @@
+<!-- Breadcrumbs-->
+<div class="row">
+  <div class="col-4">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Produits</a>
+  </li>
+  <li class="breadcrumb-item active">Listes des Produits</li>
+</ol>
+</div>
+</div>
+<!-- Area Chart Example-->
+<div class="card mb-3">
+  <div class="card-header">
+    <i class="fa fa-product-hunt" aria-hidden="true"></i>Produits
+  </div>
+  <div class="card-body">
+
+    <div   class="container">
+      <div class="row">
+        <div *ngFor ="let c of produits" class="col-sm-4">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="./././././assets/cask.jpg" alt="Card image cap">
+      <div  class="card-body">
+
+
+
+        <h5 class="card-title">{{c.nom}}
+          <span  class ="float-right" style="color:#ffc107;">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </span>
+        </h5>
+        <h6 class="card-title">{{c.nomCourt}}</h6>
+        <p class="card-text">{{c.prixVente}}<span style="color:black;margin: 5px;"><i class="fa fa-eur" aria-hidden="true"></i></span></p>
+
+        <button (click)="edit(c)" style="background: white; border: white;"   type="button" class="edit float-right" title="Edit"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></button>
+        <button (click)="delete(c)" style="background: white; border: white;" type="button" class="delete float-right" title="Delete"><i style="color: #E34724;" class="material-icons">&#xE872;</i></button>
+        <span style="color:black;"><i class="fa fa-product-hunt" aria-hidden="true"></i></span>
+
+      </div>
+    </div>
+
+  
+    </div>
+   
+    </div>
+    
+
+  
+    
+  </div>
+  <div><button  style="margin-left: 5px;"   class="btn btn-info float-right" routerLink="/produits/add"><i class="fa fa-plus"></i>AddNew</button></div>
+ 
+

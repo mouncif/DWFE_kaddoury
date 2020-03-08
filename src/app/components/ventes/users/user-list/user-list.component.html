@@ -1,0 +1,51 @@
+<!-- Breadcrumbs-->
+<div class="row">
+    <div class="col-4">
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Utilisateurs</a>
+    </li>
+    <li class="breadcrumb-item active">liste des Utilisateurs</li>
+  </ol>
+</div>
+</div>
+  <!-- Area Chart Example-->
+  <div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-users" aria-hidden="true"></i> Utilisateurs
+
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+          <thead class="table-active">
+        <tr>
+          <th>#Id</th>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Status</th>
+          <th>Email</th>
+          <th>Date Création</th>
+          <th>Telephone</th>
+          <th>Actions</th>
+
+        </tr>
+    </thead>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.nom }}</td>
+          <td>{{ user.prenom }}</td>
+          <td><strong>{{ user.status }}</strong></td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.dateCreation| date :'short' }}</td>
+          <td>{{ user.tel }}</td>
+          <td>
+            <button (click)="edit(user)" style="background: white; border: white;"   type="button" class="edit" title="Edit"><i style="color: #FFC107;" class="material-icons">&#xE254;</i></button>
+            <button (click)="delete(user)" style="background: white; border: white;" type="button" class="delete" title="Delete"><i style="color: #E34724;" class="material-icons">&#xE872;</i></button>
+
+          </td>
+        </tr>
+      </table>
+      <button type="button" class="btn btn-info add-new float-right" routerLink="add"><i class="fa fa-plus"></i>AddNew</button>
+    </div>
+  </div>
+  
