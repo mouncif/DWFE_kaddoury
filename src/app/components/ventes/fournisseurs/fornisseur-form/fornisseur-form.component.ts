@@ -27,7 +27,7 @@ export class FornisseurFormComponent implements OnInit {
   updatefournisseur(fournisseur) {
     this.fournisseurService.update(fournisseur)
       .subscribe((user) => {
-        this.router.navigateByUrl('/fournisseurs');
+        this.router.navigateByUrl('/fournisseurs'); 
       });
   }
 

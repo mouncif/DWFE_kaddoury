@@ -17,7 +17,7 @@ export class UserFormComponent implements OnInit {
   addClient(user) {
     this.userservice.add(user)
       .subscribe((user) => {
-        this.router.navigateByUrl('users');
+        this.router.navigateByUrl('/users');
   
       });
   }
@@ -25,7 +25,7 @@ export class UserFormComponent implements OnInit {
   updateClient(user) {
     this.userservice.update(user)
       .subscribe((user) => {
-        this.router.navigateByUrl('users');
+        this.router.navigateByUrl('/users');
       
       });
   }
@@ -34,15 +34,15 @@ export class UserFormComponent implements OnInit {
     if (this.userservice.form.valid) {
       if (!this.userservice.form.get('id').value) {
         this.addClient(this.userservice.form.value);
-        this.router.navigateByUrl('users');
+
 
       } else {
         this.updateClient(this.userservice.form.value);
-        this.router.navigateByUrl('users');
+   
       }
       this.userservice.form.reset();
       this.userservice.initializeFormGroup();
-      //this.router.navigate(['/users']);
+      this.router.navigate(['/users']);
   
     }
   }

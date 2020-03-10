@@ -1,41 +1,39 @@
-<!-- Breadcrumbs-->
+
 <div class="row">
-  <div class="col-4">
-<ol class="breadcrumb">
+  <div class="col-2">
+<ol class="breadcrumb" style="background-color: #f2f2f2">
     <li class="breadcrumb-item">
       <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Utilisateurs</a>
     </li>
-    <li class="breadcrumb-item active">ajouter un Utilisateur</li>
+
   </ol>
 </div>
 </div>
-  <!-- Area Chart Example-->
+
   <div class="card mb-3">
     <div class="card-header">
-      <i class="fa fa-users" aria-hidden="true"></i>Utilisateur
+      <i class="fa fa-users" aria-hidden="true"></i>Ajouter un Utilisateur
     </div>
-    <div class="card-body">
+    <div class="card-body" style="background-color: #f2f2f2;">
       <form [formGroup]="userservice.form" (submit)="save()">
-        <div class="row">
-          <div class="col-md-3">
-            <label>Photo</label>
-            <img src="assets/profile.gif"class="img-thumbnail mb-2">
-          </div>
-          <div class="col-md-9">
-            <div class="row">
-              <div class="col-md-6">
+          <div class="row">
+          <div class="col-md-6">
                 <div class="form-group">
                   <label>Nom</label>
                   <input type="text" formControlName="nom" name="nom" class="form-control" placeholder="Nom">
                 </div>
               </div>
+            </div>
+
+            <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Prenom</label>
+                  <label>Prénom</label>
                   <input type="text" formControlName="prenom" name="prenom" class="form-control" placeholder="Prenom">
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -43,6 +41,9 @@
                   <input type="text" formControlName="email" name="email" class="form-control" placeholder="Email">
                 </div>
               </div>
+            </div>
+            
+            <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label>Password</label>
@@ -50,13 +51,16 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Telephone</label>
+                  <label>Téléphone</label>
                   <input type="text" formControlName="tel" name="tel" class="form-control" placeholder="Telephone">
                 </div>
               </div>
+            </div>
+            <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label  for="sel1">Status</label>
@@ -71,9 +75,7 @@
            
             <button type="submit" class="btn btn-info">Submit</button>
             <button  type="reset" class="btn btn-info">Clear</button>
-        
-          </div>
-        </div>
+       
       </form>
     </div>
   </div>

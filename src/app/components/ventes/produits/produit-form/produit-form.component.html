@@ -1,85 +1,99 @@
-<!-- Breadcrumbs-->
-
 <div class="row">
-  <div class="col-4">
-<ol class="breadcrumb">
+  <div class="col-2">
+<ol class="breadcrumb" style="background-color: #f2f2f2">
   <li class="breadcrumb-item">
     <a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i>Produits</a>
   </li>
-  <li class="breadcrumb-item active">Ajouter un Produit</li>
+
 </ol>
   </div>
 </div>
-<!-- Area Chart Example-->
+
 <div class="card mb-3">
   <div class="card-header">
-    <i class="fa fa-product-hunt" aria-hidden="true"></i>Produit
+    <i class="fa fa-product-hunt" aria-hidden="true"></i>Ajouter un Produit
   </div>
 
-  <div class="card-body">
+  <div class="card-body" style="background-color: #f2f2f2;">
     <form [formGroup]="produitService.form" (submit)="save()">
+
       <div class="row">
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Nom</label>
+        <div class="col-md-6">
+          <div class="form-group">
+                <label>Nom*</label>
                 <input type="text" formControlName="nom" name="nom" class="form-control" placeholder="Nom">
               </div>
             </div>
-            <div class="col-md-6">
+          </div>
+
+
+
+            <div class="row">
+              <div class="col-md-6">
               <div class="form-group">
-                <label>Nom court</label>
-                <input type="text" formControlName="nomCourt" name="nomCourt" class="form-control" placeholder="Nom">
+                <label>Nom Produit</label>
+                <input type="text" formControlName="nomCourt" name="nomCourt" class="form-control" placeholder="Nom court du Produit">
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>Prix de Base</label>
-                <input type="text" formControlName="prixBase" name="prixBase" class="form-control" placeholder="prixBase">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Prix de Vente</label>
-                <input type="text" formControlName="prixVente" name="prixVente" class="form-control" placeholder="prixVente">
+                <label>Prix de Base*</label>
+                <input type="text" formControlName="prixBase" name="prixBase" class="form-control" placeholder="Prix de Base">
               </div>
             </div>
           </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+              <div class="form-group">
+                <label>Prix de Vente*</label>
+                <input type="text" formControlName="prixVente" name="prixVente" class="form-control" placeholder="Prix de Vente">
+              </div>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>Max Remise</label>
-                <input type="text" formControlName="maxRemise" name="maxRemise" class="form-control" placeholder="maxRemise">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Unite</label>
-                <input type="text" formControlName="unite" name="unite" class="form-control" placeholder="unite">
+                <label>Max Remise*</label>
+                <input type="text" formControlName="maxRemise" name="maxRemise" class="form-control" placeholder="Max de Remise">
               </div>
             </div>
           </div>
+
+            <div class="row">
+              <div class="col-md-6">
+              <div class="form-group">
+                <label>Unité*</label>
+                <input type="text" formControlName="unite" name="unite" class="form-control" placeholder="Unite">
+              </div>
+            </div>
+          </div>
+
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <label>Qte Initial</label>
-                <input type="text" formControlName="qteInitial" name="qteInitial" class="form-control" placeholder="qteInitial">
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Qte Actuel</label>
-                <input type="text" formControlName="qteActuel" name="qteActuel" class="form-control" placeholder="qteActuel">
+                <label>Quantité Initiale*</label>
+                <input type="text" formControlName="qteInitial" name="qteInitial" class="form-control" placeholder="QteInitial">
               </div>
             </div>
           </div>
+
+            <div class="row">
+              <div class="col-md-6">
+              <div class="form-group">
+                <label>Quantité Actuel*</label>
+                <input type="text" formControlName="qteActuel" name="qteActuel" class="form-control" placeholder="QteActuel">
+              </div>
+            </div>
+          </div>
+          
         
-        </div>
         
-      </div>
       <button type="submit" class="btn btn-info">Submit</button>
         <button type="reset" class="btn btn-info">Clear</button>
     </form>
