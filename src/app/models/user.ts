@@ -6,6 +6,7 @@ export interface User {
   status: string;
   password : string ;
   email: string;
+  image : string;
   dateCreation?: Date;
   tel : string ;
   

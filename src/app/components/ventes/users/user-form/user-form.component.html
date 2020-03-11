@@ -19,7 +19,7 @@
           <div class="row">
           <div class="col-md-6">
                 <div class="form-group">
-                  <label>Nom</label>
+                  <label>Nom*</label>
                   <input type="text" formControlName="nom" name="nom" class="form-control" placeholder="Nom">
                 </div>
               </div>
@@ -28,7 +28,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Prénom</label>
+                  <label>Prénom*</label>
                   <input type="text" formControlName="prenom" name="prenom" class="form-control" placeholder="Prenom">
                 </div>
               </div>
@@ -37,7 +37,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Email</label>
+                  <label>Email*</label>
                   <input type="text" formControlName="email" name="email" class="form-control" placeholder="Email">
                 </div>
               </div>
@@ -46,7 +46,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Password</label>
+                  <label>Password*</label>
                   <input type="password" formControlName="password" name="password" class="form-control" placeholder="Password">
                 </div>
               </div>
@@ -55,20 +55,31 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Téléphone</label>
+                  <label>Téléphone*</label>
                   <input type="text" formControlName="tel" name="tel" class="form-control" placeholder="Telephone">
                 </div>
               </div>
             </div>
+
+
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label  for="sel1">Status</label>
+                  <label  for="sel1">Status*</label>
                   <select class="form-control" id="sel1" formControlName="status">
                     <option>User</option>
                     <option>Editor</option>
                     <option>Admin</option>
                   </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Photo d'utilisateur</label>
+                  <input type="text" formControlName="image" name="image" class="form-control" placeholder="Url Picture">
                 </div>
               </div>
             </div>
