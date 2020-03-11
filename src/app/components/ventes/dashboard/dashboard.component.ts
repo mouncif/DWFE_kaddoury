@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { FournisseurService } from 'src/app/services/fournisseur.service';
-import { ProduitService } from 'src/app/services/produit.service';
-import { ClientService } from 'src/app/services/client.service';
-import { UserServiceService } from 'src/app/services/user-service.service';
+import { ProduitService } from '../../../services/produit.service';
+import { ClientService } from '../../../services/client.service';
+import { UserServiceService } from '../../../services/user-service.service';
+
+import { FournisseurService } from '../../../services/fournisseur.service';
 
 @Component({
   selector: 'app-dashboard',
