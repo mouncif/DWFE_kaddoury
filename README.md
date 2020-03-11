@@ -1,4 +1,13 @@
-# ExamenFrondEnd2020
+# DEMO
+
+You will find attached the link to the application : 
+https://stackblitz.com/github/mouncif/DWFE_kaddoury
+
+## Description of the application : SmartVentes
+ 
+ This application has the role of managing sales through the storage of information of suppliers, products and customers and also a part to manage users.
+
+## ExamenFrondEnd2020
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
