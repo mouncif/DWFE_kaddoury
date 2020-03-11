@@ -9,6 +9,8 @@ import {ProduitFormComponent} from './components/ventes/produits/produit-form/pr
 import { DashboardComponent } from './components/ventes/dashboard/dashboard.component';
 import { UserFormComponent } from './components/ventes/users/user-form/user-form.component';
 import { UserListComponent } from './components/ventes/users/user-list/user-list.component';
+import { LoginComponent } from './components/auth/login/login.component';
+
 
 
 const routes: Routes = [
@@ -26,6 +28,16 @@ const routes: Routes = [
   { path: 'users', component: UserListComponent},
   { path: 'users/add', component: UserFormComponent},
   { path: 'users/edit', component: UserFormComponent},
+
+
+  { path: 'login', component: LoginComponent},
+ 
+
+  
+
+  
+
+  
 
   
 
