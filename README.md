@@ -7,30 +7,37 @@ https://stackblitz.com/github/mouncif/DWFE_kaddoury
  
  This application has the role of managing sales through the storage of information of suppliers, products and customers and also a part to manage users.
 
-## ExamenFrondEnd2020
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+## Technologies : 
 
-## Development server
+<ul>
+<li><strong>Angular Framework FrontEnd</strong></li>
+<li><strong>Bootstrap 4(Style)</strong></li>
+<li><strong>Json-Server</strong></li>
+</ul>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Running Project on Dev Server :
 
-## Code scaffolding
+To run this Project on your Local machine ,you should follow this steps : 
+<ul>
+<li>Clone this project by using this command :<strong>Git clone git@github.com:mouncif/DWFE_kaddoury.git</strong></li>
+<li>Install all dependencies by running this command :<strong>run npm install</strong></li>
+<li>run json server by this command in your command prompt : <strong>json-server --watch database.json</strong</li>
+<li>Run the Dev server of Angular by using this command :  <strong>ng serve</strong</li>
+</ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Some Demo Pictures:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/dashboard.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/product.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/users.PNG">
 
-## Running unit tests
+## To Contact me :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For any information or note ,contact me by using my professional address Mail : kaddoury2017@gmail.com
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
