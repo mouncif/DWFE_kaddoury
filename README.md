@@ -29,9 +29,12 @@ To run this Project on your Local machine ,you should follow this steps :
 
 ## Some Demo Pictures:
 
-<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/dashboard.PNG">
-<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/product.PNG">
-<img src="https://github.com/mouncif/DWFE_kaddoury/picturesDemopages/users.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/blob/master/picturesDemopages/dashboard.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/blob/master/picturesDemopages/product.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/blob/master/picturesDemopages/users.PNG">
+<img src="https://github.com/mouncif/DWFE_kaddoury/blob/master/picturesDemopages/fournisseur.PNG">
+
+
 
 ## To Contact me :
 
